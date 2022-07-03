@@ -4,10 +4,10 @@ on:
     branches: [develop]
     
 jobs:
-  jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: checks-out your repository under $GITHUB_WORKSPACE
-    uses: actions/checkoout@v2
-  - name: use echo command
-    run: echo "sample-workflow"
+  jobs1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checks-out your repository under $GITHUB_WORKSPACE
+      uses: actions/checkoout@v2
+    - name: use echo command
+      run: echo "sample-workflow"
